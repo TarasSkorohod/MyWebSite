@@ -236,4 +236,28 @@ section {
 .typewriter-text {
     color: rgb(32, 236, 83);
 }
-  
+.intro_sec .intro_btn-action {
+    text-align: center; /* Center the buttons */
+    margin-top: 20px; /* Add some spacing between buttons */
+}
+
+.intro_sec .intro_btn-action .ac_btn {
+    margin-bottom: 15px; /* Add spacing between buttons */
+}
+
+/* Adjust button styles for better visibility on mobile */
+.intro_sec .intro_btn-action .ac_btn {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767.98px) {
+    .intro_sec .intro_btn-action {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+
+    .intro_sec .intro_btn-action .ac_btn {
+        margin-bottom: 10px; /* Adjust spacing between buttons for better readability */
+    }
+}

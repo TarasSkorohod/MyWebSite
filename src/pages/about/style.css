@@ -75,12 +75,12 @@
     position: relative; /* Add relative positioning for the shadow illusion */
     transform: perspective(1px) translateZ(0); /* Add transform for hovering effect */
     transition: transform 0.3s ease; /* Add transition for smooth animation */
-  
+
     display: flex; /* Use flex to align items */
     flex-direction: column; /* Align items vertically */
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
-  
+
     /* Additional styling for the text */
     text-align: center;
     font-size: 14px;
@@ -107,4 +107,36 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax width as needed */
     gap: 10px; /* Add some gap between the cards */
   }
-  
+
+/* Styles for light theme */
+.table td,
+.table th {
+    color: var(--text-color);
+    background-color: var(--background-color-light);
+}
+
+.t_border {
+    border-color: var(--text-color) !important;
+}
+
+/* Additional light theme styles... */
+
+/* Dark theme styles */
+body.dark-mode {
+    --text-color: #ffffff; /* Set text color for dark mode */
+    --background-color-light: #f8f9fa; /* Set light background color for dark mode */
+}
+
+body.dark-mode .table td,
+body.dark-mode .table th {
+    color: var(--text-color);
+    background-color: var(--background-color-dark);
+}
+
+body.dark-mode .t_border {
+    border-color: var(--text-color) !important;
+}
+
+/* Additional dark theme styles... */
+
+/* Your existing CSS styles... */
