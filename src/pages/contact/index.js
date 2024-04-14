@@ -7,6 +7,11 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -40,7 +45,7 @@ export const ContactUs = () => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! , Looking forward to reading your email.",
+            alertmessage: "Your message has been successfully sent! We look forward to reading your email.",
             variant: "success",
             show: true,
           });
@@ -120,13 +125,13 @@ export const ContactUs = () => {
                 </Col>
                 <Col lg="6" className="form-group">
                   <input
-                    className="form-control rounded-0"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    type="email"
-                    value={formData.email || ""}
-                    required
+                      className="form-control rounded-0"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                      value={formData.email || ""}
+                      required
                     onChange={handleChange}
                   />
                 </Col>
