@@ -35,13 +35,8 @@ const worktimeline = [
     },
     {
         jobtitle: "Example 2",
-        where: "Freelance",
-        date: "2023",
-    },
-    {
-        jobtitle: "Example 1",
-        where: "Freelance",
-        date: "2022",
+        where: "Outsource Self-Employed",
+        date: "2023-2024",
     },
 
 ];
