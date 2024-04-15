@@ -12,6 +12,7 @@ section {
 }
 
 .has-first-color {
+
     color: var(--primary-color);
 }
 
@@ -234,7 +235,7 @@ section {
 }
 
 .typewriter-text {
-    color: rgb(32, 236, 83);
+    color: var(--text-color);
 }
 .intro_sec .intro_btn-action {
     text-align: center; /* Center the buttons */

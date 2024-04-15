@@ -27,7 +27,18 @@ const dataabout = {
         " During this time, working in different companies, I realized that my real goal is to work with my own clients and provide them with the highest level of service." +
         "For me, high-class service and quality product are the most important, so I can say with confidence that you can trust me with your future project.",
 };
-const worktimeline = [{
+const worktimeline = [
+    {
+        jobtitle: "Example 1",
+        where: "Freelance",
+        date: "2022",
+    },
+    {
+        jobtitle: "Example 2",
+        where: "Freelance",
+        date: "2023",
+    },
+    {
         jobtitle: "Example 1",
         where: "Freelance",
         date: "2022",
