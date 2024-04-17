@@ -94,6 +94,8 @@ const dataportfolio = [{
     },
 ];
 
+// https://dashboard.emailjs.com/admin
+//If you need a form, follow this link to create an account and set it up
 const contactConfig = {
     YOUR_EMAIL: "skorohodit12@gmail.com",
     description: "Looking forward to hearing from you!",

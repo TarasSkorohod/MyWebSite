@@ -8,6 +8,8 @@ import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
 
+  // https://dashboard.emailjs.com/admin/statistics
+
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -104,6 +106,7 @@ export const ContactUs = () => {
             </address>
             <p>{contactConfig.description}</p>
           </Col>
+          {/*If you don't need a feedback form, delete lines 109 to 158, if necessary, I wrote a guide*/}
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
@@ -152,6 +155,7 @@ export const ContactUs = () => {
               </Row>
             </form>
           </Col>
+
         </Row>
       </Container>
       <div className={formData.loading ? "loading-bar" : "d-none"}></div>

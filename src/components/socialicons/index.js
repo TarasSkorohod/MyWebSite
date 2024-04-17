@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { socialprofils } from "../../content_option";
 
-export const Socialicons = (params) => {
+export const Socialicons = () => {
   return (
     <div className="stick_follow_icon">
       <ul>
